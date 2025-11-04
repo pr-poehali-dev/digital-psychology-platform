@@ -110,7 +110,7 @@ const Index = () => {
       </section>
 
       <section id="calendar" className="min-h-screen flex items-center justify-center py-20 px-4">
-        <div className="container mx-auto max-w-5xl">
+        <div className="container mx-auto max-w-6xl">
           <div className="space-y-12 animate-fade-in">
             <div className="text-center space-y-6">
               <h2 className="text-4xl md:text-6xl font-bold font-heading">
@@ -120,19 +120,26 @@ const Index = () => {
               <p className="text-2xl font-semibold">366 дней — твоя личная карта энергии.</p>
             </div>
 
-            <Card className="bg-card border-primary/30">
-              <CardContent className="p-8 md:p-12">
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div className="space-y-6">
-                    <p className="text-lg">
-                      Каждый день — подсказка: когда действовать, когда замедлиться, когда взлетать.
-                    </p>
-                    <p className="text-lg">
-                      Без эзотерики. Без "вселенских энергий". Только точная работа с твоим кодом.
-                    </p>
-                  </div>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <img 
+                  src="https://cdn.poehali.dev/files/2676d461-1711-48b0-8756-d79154955ce9.jpg" 
+                  alt="Ольга Бауэр" 
+                  className="rounded-lg shadow-2xl w-full object-cover"
+                />
+              </div>
+              <Card className="bg-card border-primary/30">
+                <CardContent className="p-8 md:p-10">
                   <div className="space-y-6">
                     <div className="space-y-4">
+                      <p className="text-lg">
+                        Каждый день — подсказка: когда действовать, когда замедлиться, когда взлетать.
+                      </p>
+                      <p className="text-lg">
+                        Без эзотерики. Без "вселенских энергий". Только точная работа с твоим кодом.
+                      </p>
+                    </div>
+                    <div className="space-y-4 pt-4">
                       <div className="flex items-center justify-between p-4 bg-background rounded-lg border border-primary">
                         <div>
                           <p className="text-sm text-muted-foreground">Пресейл (до 15 декабря)</p>
@@ -148,15 +155,15 @@ const Index = () => {
                         <Icon name="Star" className="text-muted-foreground" size={28} />
                       </div>
                     </div>
-                    <Button size="lg" className="w-full text-lg font-semibold" asChild>
+                    <Button size="lg" className="w-full text-lg font-semibold mt-4" asChild>
                       <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer">
                         📅 Купить календарь
                       </a>
                     </Button>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
