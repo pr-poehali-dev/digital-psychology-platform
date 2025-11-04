@@ -7,13 +7,32 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
+import Autoplay from "embla-carousel-autoplay";
 
 const Index = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false);
   };
+
+  useEffect(() => {
+    const style = document.createElement('style');
+    style.textContent = `
+      html {
+        scroll-behavior: smooth;
+      }
+    `;
+    document.head.appendChild(style);
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -28,7 +47,23 @@ const Index = () => {
               <button onClick={() => scrollToSection('diag')} className="hover:text-primary transition-colors">Диагностика</button>
               <button onClick={() => scrollToSection('about')} className="hover:text-primary transition-colors">Обо мне</button>
             </div>
+            <button 
+              onClick={() => setIsMenuOpen(!isMenuOpen)} 
+              className="md:hidden p-2 hover:text-primary transition-colors"
+              aria-label="Меню"
+            >
+              <Icon name={isMenuOpen ? "X" : "Menu"} size={24} />
+            </button>
           </div>
+          {isMenuOpen && (
+            <div className="md:hidden mt-4 flex flex-col gap-3 pb-4 animate-fade-in">
+              <button onClick={() => scrollToSection('hero')} className="text-left py-2 hover:text-primary transition-colors">Главная</button>
+              <button onClick={() => scrollToSection('efir')} className="text-left py-2 hover:text-primary transition-colors">Эфиры</button>
+              <button onClick={() => scrollToSection('calendar')} className="text-left py-2 hover:text-primary transition-colors">Календарь</button>
+              <button onClick={() => scrollToSection('diag')} className="text-left py-2 hover:text-primary transition-colors">Диагностика</button>
+              <button onClick={() => scrollToSection('about')} className="text-left py-2 hover:text-primary transition-colors">Обо мне</button>
+            </div>
+          )}
         </div>
       </nav>
 
@@ -43,7 +78,11 @@ const Index = () => {
             </div>
             
             <div className="w-full md:hidden animate-slide-up">
-              <Carousel className="w-full" opts={{ loop: true }}>
+              <Carousel 
+                className="w-full" 
+                opts={{ loop: true }}
+                plugins={[Autoplay({ delay: 4000 })]}
+              >
                 <CarouselContent>
                   <CarouselItem>
                     <img 
@@ -90,7 +129,11 @@ const Index = () => {
               </div>
             </div>
             <div className="hidden md:block animate-slide-up">
-              <Carousel className="w-full" opts={{ loop: true }}>
+              <Carousel 
+                className="w-full" 
+                opts={{ loop: true }}
+                plugins={[Autoplay({ delay: 4000 })]}
+              >
                 <CarouselContent>
                   <CarouselItem>
                     <img 
@@ -256,11 +299,11 @@ const Index = () => {
       <section id="about" className="min-h-screen flex items-center justify-center py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-5xl">
           <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-12 items-center animate-fade-in">
-            <div className="w-full space-y-3 md:space-y-6">
+            <div className="w-full md:space-y-6">
               <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-heading">
                 Ольга Бауэр.
               </h2>
-              <p className="text-lg sm:text-xl md:text-2xl font-semibold text-primary">
+              <p className="text-lg sm:text-xl md:text-2xl font-semibold text-primary mt-3 md:mt-0">
                 Девушка, которая не ждала идеальных условий.
               </p>
             </div>
@@ -273,7 +316,7 @@ const Index = () => {
               />
             </div>
 
-            <div className="w-full space-y-3 md:space-y-6">
+            <div className="w-full md:space-y-6">
               <div className="space-y-2 text-sm md:text-lg">
                 <p>Переехала в Ялту с ребёнком и нулём.</p>
                 <p>Нашла работу за 7 дней.</p>
@@ -282,16 +325,16 @@ const Index = () => {
                   Не учу жить — показываю, как это возможно.
                 </p>
               </div>
-              <div className="pt-4 md:pt-8 space-y-3">
+              <div className="pt-4 md:pt-8 space-y-3 md:space-y-4">
                 <p className="text-sm md:text-lg font-semibold">Контакты:</p>
-                <div className="flex flex-col gap-2">
-                  <Button variant="outline" size="sm" className="w-full" asChild>
+                <div className="flex flex-col md:flex-row gap-2 md:gap-4">
+                  <Button variant="outline" size="sm" className="w-full md:w-auto" asChild>
                     <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 justify-center">
                       <Icon name="Bot" size={18} />
                       @bauer_kalendar_bot
                     </a>
                   </Button>
-                  <Button variant="outline" size="sm" className="w-full" asChild>
+                  <Button variant="outline" size="sm" className="w-full md:w-auto" asChild>
                     <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 justify-center">
                       <Icon name="Send" size={18} />
                       @Olga_Bauer
