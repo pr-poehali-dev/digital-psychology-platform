@@ -302,61 +302,62 @@ const Index = () => {
       </section>
 
       <section id="about" className="min-h-screen flex items-center justify-center py-12 md:py-20 px-4">
-        <div className="container mx-auto max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center animate-fade-in">
-            <div className="md:space-y-4">
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-heading">
-                Ольга Бауэр.
-              </h2>
-              <p className="text-lg sm:text-xl md:text-2xl font-semibold text-primary mt-3 md:mt-0">
-                Девушка, которая не ждала идеальных условий.
-              </p>
-            </div>
-            
-            <div className="md:hidden">
-              <img 
-                src="https://cdn.poehali.dev/files/1e379f95-1836-4abc-92cf-fca4d4e51409.jpg" 
-                alt="Ольга Бауэр" 
-                className="rounded-lg shadow-2xl w-full object-cover max-h-[50vh]"
-              />
-            </div>
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-[1fr,400px] gap-6 md:gap-16 items-start animate-fade-in">
+            <div className="space-y-6">
+              <div>
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-heading">
+                  Ольга Бауэр.
+                </h2>
+                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-primary mt-3">
+                  Девушка, которая не ждала идеальных условий.
+                </p>
+              </div>
+              
+              <div className="md:hidden">
+                <img 
+                  src="https://cdn.poehali.dev/files/1e379f95-1836-4abc-92cf-fca4d4e51409.jpg" 
+                  alt="Ольга Бауэр" 
+                  className="rounded-lg shadow-2xl w-full object-cover max-h-[50vh]"
+                />
+              </div>
 
-            <div className="md:space-y-3">
-              <div className="space-y-2 text-sm md:text-lg">
+              <div className="space-y-3 text-sm md:text-lg">
                 <p>Переехала в Ялту с ребёнком и нулём.</p>
                 <p>Нашла работу за 7 дней.</p>
                 <p>Живу у моря. Кайфую.</p>
-                <p className="text-base md:text-xl font-semibold pt-2 md:pt-4">
+                <p className="text-base md:text-xl font-semibold pt-2">
                   Не учу жить — показываю, как это возможно.
                 </p>
               </div>
-              <div className="pt-4 md:pt-6 space-y-3 md:space-y-4">
+              
+              <div className="pt-4 space-y-4">
                 <p className="text-sm md:text-lg font-semibold">Контакты:</p>
-                <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
-                  <Button variant="outline" size="sm" className="w-full sm:w-auto" asChild>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Button variant="outline" className="w-full sm:w-auto" asChild>
                     <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                       <Icon name="Bot" size={20} />
                       @bauer_kalendar_bot
                     </a>
                   </Button>
-                  <Button variant="outline" size="sm" className="w-full sm:w-auto" asChild>
+                  <Button variant="outline" className="w-full sm:w-auto" asChild>
                     <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                       <Icon name="Send" size={20} />
                       @Olga_Bauer
                     </a>
                   </Button>
                 </div>
-                <p className="text-secondary text-sm md:text-lg pt-2">
+                <p className="text-secondary text-sm md:text-lg">
                   Эфиры: каждый четверг в 20:00
                 </p>
               </div>
             </div>
             
-            <div className="hidden md:block">
+            <div className="hidden md:block sticky top-24">
               <img 
                 src="https://cdn.poehali.dev/files/1e379f95-1836-4abc-92cf-fca4d4e51409.jpg" 
                 alt="Ольга Бауэр" 
-                className="rounded-lg shadow-2xl w-full object-cover"
+                className="rounded-lg shadow-2xl w-full object-cover max-h-[600px]"
               />
             </div>
           </div>
