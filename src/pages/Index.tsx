@@ -191,7 +191,7 @@ const Index = () => {
                       </CarouselItem>
                       <CarouselItem>
                         <img 
-                          src="https://cdn.poehali.dev/files/a63a3413-26ae-4083-93f9-99aa6491a33e.jpg" 
+                          src="https://cdn.poehali.dev/files/896a89f8-3543-49f1-a740-f91fcbd4ea9d.jpg" 
                           alt="Ольга Бауэр" 
                           className="rounded-lg shadow-2xl w-full object-cover h-[300px]"
                         />
@@ -259,7 +259,7 @@ const Index = () => {
                       </CarouselItem>
                       <CarouselItem>
                         <img 
-                          src="https://cdn.poehali.dev/files/a63a3413-26ae-4083-93f9-99aa6491a33e.jpg" 
+                          src="https://cdn.poehali.dev/files/896a89f8-3543-49f1-a740-f91fcbd4ea9d.jpg" 
                           alt="Ольга Бауэр" 
                           className="rounded-lg shadow-2xl w-full object-cover h-[500px] lg:h-[700px]"
                         />
