@@ -113,10 +113,9 @@ const Index = () => {
                 МОЯ ЗАДАЧА — ПОКАЗАТЬ, КАК ЭТО ИСПОЛЬЗОВАТЬ.
               </p>
               <div className="space-y-2 text-sm md:text-lg">
-                <p className="font-semibold">Ольга Бауэр</p>
-                <p>Год назад я была там, где ты сейчас.<br />
-                Сегодня — живу у моря с ребёнком и помогаю другим найти свой код силы.</p>
-                <p className="font-semibold">Не мотивирую. Показываю реальный путь.</p>
+                <p className="font-semibold">Я — Ольга Бауэр.</p>
+                <p>Прошла взлёты, падения, абьюз, страхи и нули.</p>
+                <p>Но однажды поняла свой код охуенности — и всё изменилось.</p>
               </div>
               <div className="flex flex-col gap-2 md:flex-row md:gap-4">
                 <Button size="default" className="text-sm md:text-lg font-semibold w-full md:w-auto" onClick={() => scrollToSection('efir')}>
