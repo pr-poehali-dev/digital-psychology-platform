@@ -156,23 +156,23 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="mission" className="min-h-screen flex items-center justify-center py-12 md:py-20 px-4 bg-card/50">
+      <section id="mission" className="min-h-screen flex items-center justify-center py-8 md:py-20 px-4 bg-card/50">
         <div className="container mx-auto max-w-6xl">
-          <div className="space-y-8 md:space-y-12 animate-fade-in">
-            <div className="text-center space-y-4 md:space-y-6">
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-heading leading-tight">
+          <div className="space-y-4 md:space-y-12 animate-fade-in">
+            <div className="text-center space-y-2 md:space-y-6">
+              <h2 className="text-xl sm:text-2xl md:text-5xl font-bold font-heading leading-tight">
                 Показываю, что возможно всё —<br />
                 <span className="text-primary">когда ты в соединении с собой.</span>
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="space-y-6">
-                <div className="space-y-4 text-base md:text-lg">
+            <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-center">
+              <div className="space-y-3 md:space-y-6">
+                <div className="space-y-2 md:space-y-4 text-sm md:text-lg">
                   <p>
                     Сейчас я живу у моря, дышу свободой и помогаю другим включать свой код силы.
                   </p>
-                  <p className="text-lg md:text-xl font-semibold">
+                  <p className="text-base md:text-xl font-semibold">
                     Помогаю увидеть твой внутренний код — ту силу, из которой рождается уверенность, ясность и деньги.
                   </p>
                 </div>
@@ -188,14 +188,14 @@ const Index = () => {
                       <img 
                         src="https://cdn.poehali.dev/files/cd8c9969-9cf3-4563-9ab4-ddcc1b2901f4.jpg" 
                         alt="Ольга Бауэр" 
-                        className="rounded-lg shadow-2xl w-full object-cover max-h-[700px]"
+                        className="rounded-lg shadow-2xl w-full object-cover h-[300px] md:h-[500px] lg:h-[700px]"
                       />
                     </CarouselItem>
                     <CarouselItem>
                       <img 
                         src="https://cdn.poehali.dev/files/a63a3413-26ae-4083-93f9-99aa6491a33e.jpg" 
                         alt="Ольга Бауэр" 
-                        className="rounded-lg shadow-2xl w-full object-cover max-h-[700px]"
+                        className="rounded-lg shadow-2xl w-full object-cover h-[300px] md:h-[500px] lg:h-[700px]"
                       />
                     </CarouselItem>
                   </CarouselContent>
