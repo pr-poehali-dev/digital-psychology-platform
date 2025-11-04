@@ -116,8 +116,6 @@ const Index = () => {
                 <p className="font-semibold">Я — Ольга Бауэр.</p>
                 <p>Прошла взлёты, падения, абьюз, страхи и нули.</p>
                 <p>Но однажды поняла свой код охуенности — и всё изменилось.</p>
-                <p>Сейчас я живу у моря, дышу свободой</p>
-                <p>и помогаю другим включать свой код силы.</p>
               </div>
               <div className="flex flex-col gap-2 md:flex-row md:gap-4">
                 <Button size="default" className="text-sm md:text-lg font-semibold w-full md:w-auto" onClick={() => scrollToSection('efir')}>
@@ -158,7 +156,47 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="efir" className="min-h-screen flex items-center justify-center py-12 md:py-20 px-4 bg-card/50">
+      <section id="mission" className="min-h-screen flex items-center justify-center py-12 md:py-20 px-4 bg-card/50">
+        <div className="container mx-auto max-w-6xl">
+          <div className="space-y-8 md:space-y-12 animate-fade-in">
+            <div className="text-center space-y-4 md:space-y-6">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-heading leading-tight">
+                Показываю, что возможно всё —<br />
+                <span className="text-primary">когда ты в соединении с собой.</span>
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="space-y-6">
+                <div className="space-y-4 text-base md:text-lg">
+                  <p>
+                    Сейчас я живу у моря, дышу свободой и помогаю другим включать свой код силы.
+                  </p>
+                  <p className="text-lg md:text-xl font-semibold">
+                    Помогаю увидеть твой внутренний код — ту силу, из которой рождается уверенность, ясность и деньги.
+                  </p>
+                </div>
+                <div className="pt-4">
+                  <img 
+                    src="https://cdn.poehali.dev/files/a63a3413-26ae-4083-93f9-99aa6491a33e.jpg" 
+                    alt="Ольга Бауэр" 
+                    className="rounded-lg shadow-2xl w-full object-cover"
+                  />
+                </div>
+              </div>
+              <div>
+                <img 
+                  src="https://cdn.poehali.dev/files/cd8c9969-9cf3-4563-9ab4-ddcc1b2901f4.jpg" 
+                  alt="Ольга Бауэр" 
+                  className="rounded-lg shadow-2xl w-full object-cover max-h-[700px]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="efir" className="min-h-screen flex items-center justify-center py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="animate-fade-in order-2 md:order-1">
