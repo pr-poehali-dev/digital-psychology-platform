@@ -20,7 +20,7 @@ const Index = () => {
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-lg border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h2 className="text-xl sm:text-2xl font-bold font-heading text-primary">Ольга Бауэр</h2>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold font-heading text-primary">Ольга Бауэр</h2>
             <div className="hidden md:flex gap-6">
               <button onClick={() => scrollToSection('hero')} className="hover:text-primary transition-colors">Главная</button>
               <button onClick={() => scrollToSection('efir')} className="hover:text-primary transition-colors">Эфиры</button>
@@ -255,44 +255,56 @@ const Index = () => {
 
       <section id="about" className="min-h-screen flex items-center justify-center py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center animate-fade-in">
-            <div className="space-y-4 md:space-y-6">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-heading">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-12 items-center animate-fade-in">
+            <div className="w-full space-y-3 md:space-y-6">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-heading">
                 Ольга Бауэр.
               </h2>
-              <p className="text-xl sm:text-2xl font-semibold text-primary">
+              <p className="text-lg sm:text-xl md:text-2xl font-semibold text-primary">
                 Девушка, которая не ждала идеальных условий.
               </p>
-              <div className="space-y-3 text-base md:text-lg">
+            </div>
+            
+            <div className="w-full md:hidden">
+              <img 
+                src="https://cdn.poehali.dev/files/1e379f95-1836-4abc-92cf-fca4d4e51409.jpg" 
+                alt="Ольга Бауэр" 
+                className="rounded-lg shadow-2xl w-full object-cover max-h-[50vh]"
+              />
+            </div>
+
+            <div className="w-full space-y-3 md:space-y-6">
+              <div className="space-y-2 text-sm md:text-lg">
                 <p>Переехала в Ялту с ребёнком и нулём.</p>
                 <p>Нашла работу за 7 дней.</p>
                 <p>Живу у моря. Кайфую.</p>
-                <p className="text-lg md:text-xl font-semibold pt-4">
+                <p className="text-base md:text-xl font-semibold pt-2 md:pt-4">
                   Не учу жить — показываю, как это возможно.
                 </p>
               </div>
-              <div className="pt-6 md:pt-8 space-y-4">
-                <p className="text-base md:text-lg font-semibold">Контакты:</p>
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <Button variant="outline" asChild>
-                    <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                      <Icon name="Bot" size={20} />
+              <div className="pt-4 md:pt-8 space-y-3">
+                <p className="text-sm md:text-lg font-semibold">Контакты:</p>
+                <div className="flex flex-col gap-2">
+                  <Button variant="outline" size="sm" className="w-full" asChild>
+                    <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 justify-center">
+                      <Icon name="Bot" size={18} />
                       @bauer_kalendar_bot
                     </a>
                   </Button>
-                  <Button variant="outline" asChild>
-                    <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                      <Icon name="Send" size={20} />
+                  <Button variant="outline" size="sm" className="w-full" asChild>
+                    <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 justify-center">
+                      <Icon name="Send" size={18} />
                       @Olga_Bauer
                     </a>
                   </Button>
                 </div>
-                <p className="text-secondary text-base md:text-lg pt-4">
+                <p className="text-secondary text-sm md:text-lg pt-2">
                   Эфиры: каждый четверг в 20:00
                 </p>
               </div>
             </div>
-            <div>
+            
+            <div className="hidden md:block">
               <img 
                 src="https://cdn.poehali.dev/files/1e379f95-1836-4abc-92cf-fca4d4e51409.jpg" 
                 alt="Ольга Бауэр" 
