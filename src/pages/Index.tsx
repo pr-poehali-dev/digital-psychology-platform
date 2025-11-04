@@ -426,9 +426,6 @@ const Index = () => {
                 <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-heading">
                   Ольга Бауэр.
                 </h2>
-                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-primary mt-3">
-                  Девушка, которая не ждала идеальных условий.
-                </p>
               </div>
               
               <div className="md:hidden">
@@ -440,11 +437,10 @@ const Index = () => {
               </div>
 
               <div className="space-y-3 text-sm md:text-lg">
-                <p>Переехала в Ялту с ребёнком и нулём.</p>
-                <p>Нашла работу за 7 дней.</p>
-                <p>Живу у моря. Кайфую.</p>
+                <p>Год назад я была там, где ты сейчас.</p>
+                <p>Сегодня — живу у моря с ребёнком и помогаю другим найти свой код силы.</p>
                 <p className="text-base md:text-xl font-semibold pt-2">
-                  Не учу жить — показываю, как это возможно.
+                  Не мотивирую. Показываю реальный путь.
                 </p>
               </div>
               
