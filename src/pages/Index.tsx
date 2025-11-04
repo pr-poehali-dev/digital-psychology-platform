@@ -188,83 +188,50 @@ const Index = () => {
       </section>
 
       <section id="about" className="min-h-screen flex items-center justify-center py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="space-y-16 animate-fade-in">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6">
-                <h2 className="text-4xl md:text-5xl font-bold font-heading">
-                  Ольга Бауэр.
-                </h2>
-                <p className="text-2xl font-semibold text-primary">
-                  Девушка, которая не ждала идеальных условий.
+        <div className="container mx-auto max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-12 items-center animate-fade-in">
+            <div className="space-y-6">
+              <h2 className="text-4xl md:text-5xl font-bold font-heading">
+                Ольга Бауэр.
+              </h2>
+              <p className="text-2xl font-semibold text-primary">
+                Девушка, которая не ждала идеальных условий.
+              </p>
+              <div className="space-y-4 text-lg">
+                <p>Переехала в Ялту с ребёнком и нулём.</p>
+                <p>Нашла работу за 7 дней.</p>
+                <p>Живу у моря. Кайфую.</p>
+                <p className="text-xl font-semibold pt-4">
+                  Не учу жить — показываю, как это возможно.
                 </p>
-                <div className="space-y-4 text-lg">
-                  <p>Переехала в Ялту с ребёнком и нулём.</p>
-                  <p>Нашла работу за 7 дней.</p>
-                  <p>Живу у моря. Кайфую.</p>
-                  <p className="text-xl font-semibold pt-4">
-                    Не учу жить — показываю, как это возможно.
-                  </p>
-                </div>
-                <div className="pt-8 space-y-4">
-                  <p className="text-lg font-semibold">Контакты:</p>
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <Button variant="outline" asChild>
-                      <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                        <Icon name="Bot" size={20} />
-                        @bauer_kalendar_bot
-                      </a>
-                    </Button>
-                    <Button variant="outline" asChild>
-                      <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                        <Icon name="Send" size={20} />
-                        @Olga_Bauer
-                      </a>
-                    </Button>
-                  </div>
-                  <p className="text-secondary text-lg pt-4">
-                    Эфиры: каждый четверг в 20:00
-                  </p>
-                </div>
               </div>
-              <div>
-                <img 
-                  src="https://cdn.poehali.dev/files/6069882d-b745-41d9-a8e2-cf622bc26f32.jpg" 
-                  alt="Ольга Бауэр у моря" 
-                  className="rounded-lg shadow-2xl w-full object-cover"
-                />
+              <div className="pt-8 space-y-4">
+                <p className="text-lg font-semibold">Контакты:</p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button variant="outline" asChild>
+                    <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <Icon name="Bot" size={20} />
+                      @bauer_kalendar_bot
+                    </a>
+                  </Button>
+                  <Button variant="outline" asChild>
+                    <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <Icon name="Send" size={20} />
+                      @Olga_Bauer
+                    </a>
+                  </Button>
+                </div>
+                <p className="text-secondary text-lg pt-4">
+                  Эфиры: каждый четверг в 20:00
+                </p>
               </div>
             </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="aspect-square overflow-hidden rounded-lg group cursor-pointer">
-                <img 
-                  src="https://cdn.poehali.dev/files/91ae76b8-c1c8-417c-aa75-60ea08c05812.jpg" 
-                  alt="Ольга Бауэр" 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="aspect-square overflow-hidden rounded-lg group cursor-pointer">
-                <img 
-                  src="https://cdn.poehali.dev/files/720bc98e-b48c-435e-8878-b5489d644052.jpg" 
-                  alt="Ольга Бауэр" 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="aspect-square overflow-hidden rounded-lg group cursor-pointer">
-                <img 
-                  src="https://cdn.poehali.dev/files/7eb604d6-d561-4d76-9fc3-54bf2f562ac0.jpg" 
-                  alt="Ольга Бауэр" 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="aspect-square overflow-hidden rounded-lg group cursor-pointer">
-                <img 
-                  src="https://cdn.poehali.dev/files/d08508fc-414b-46b5-9c73-93b50386bd9c.jpg" 
-                  alt="Ольга Бауэр" 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
+            <div>
+              <img 
+                src="https://cdn.poehali.dev/files/6069882d-b745-41d9-a8e2-cf622bc26f32.jpg" 
+                alt="Ольга Бауэр у моря" 
+                className="rounded-lg shadow-2xl w-full object-cover"
+              />
             </div>
           </div>
         </div>
