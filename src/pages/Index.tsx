@@ -176,20 +176,32 @@ const Index = () => {
                     Помогаю увидеть твой внутренний код — ту силу, из которой рождается уверенность, ясность и деньги.
                   </p>
                 </div>
-                <div className="pt-4">
-                  <img 
-                    src="https://cdn.poehali.dev/files/a63a3413-26ae-4083-93f9-99aa6491a33e.jpg" 
-                    alt="Ольга Бауэр" 
-                    className="rounded-lg shadow-2xl w-full object-cover"
-                  />
-                </div>
               </div>
-              <div>
-                <img 
-                  src="https://cdn.poehali.dev/files/cd8c9969-9cf3-4563-9ab4-ddcc1b2901f4.jpg" 
-                  alt="Ольга Бауэр" 
-                  className="rounded-lg shadow-2xl w-full object-cover max-h-[700px]"
-                />
+              <div className="animate-slide-up">
+                <Carousel 
+                  className="w-full" 
+                  opts={{ loop: true }}
+                  plugins={[Autoplay({ delay: 4000 })]}
+                >
+                  <CarouselContent>
+                    <CarouselItem>
+                      <img 
+                        src="https://cdn.poehali.dev/files/cd8c9969-9cf3-4563-9ab4-ddcc1b2901f4.jpg" 
+                        alt="Ольга Бауэр" 
+                        className="rounded-lg shadow-2xl w-full object-cover max-h-[700px]"
+                      />
+                    </CarouselItem>
+                    <CarouselItem>
+                      <img 
+                        src="https://cdn.poehali.dev/files/a63a3413-26ae-4083-93f9-99aa6491a33e.jpg" 
+                        alt="Ольга Бауэр" 
+                        className="rounded-lg shadow-2xl w-full object-cover max-h-[700px]"
+                      />
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious className="left-4" />
+                  <CarouselNext className="right-4" />
+                </Carousel>
               </div>
             </div>
           </div>
