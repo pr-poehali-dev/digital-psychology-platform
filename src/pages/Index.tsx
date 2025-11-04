@@ -53,7 +53,7 @@ const Index = () => {
           </div>
           <div className="animate-slide-up">
             <img 
-              src="https://cdn.poehali.dev/files/6069882d-b745-41d9-a8e2-cf622bc26f32.jpg" 
+              src="https://cdn.poehali.dev/files/2676d461-1711-48b0-8756-d79154955ce9.jpg" 
               alt="Ольга Бауэр" 
               className="rounded-lg shadow-2xl w-full object-cover"
             />
@@ -123,7 +123,7 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <img 
-                  src="https://cdn.poehali.dev/files/2676d461-1711-48b0-8756-d79154955ce9.jpg" 
+                  src="https://cdn.poehali.dev/files/547fedd2-d8bc-427e-86e9-66355ae0a1a9.jpg" 
                   alt="Ольга Бауэр" 
                   className="rounded-lg shadow-2xl w-full object-cover"
                 />
