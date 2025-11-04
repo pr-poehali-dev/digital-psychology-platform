@@ -209,12 +209,12 @@ const Index = () => {
       <section id="calendar" className="min-h-screen flex items-center justify-center py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="space-y-8 md:space-y-12 animate-fade-in">
-            <div className="text-center space-y-4 md:space-y-6">
-              <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold font-heading">
+            <div className="text-left md:text-center space-y-4 md:space-y-6">
+              <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold font-heading">
                 ТВОЙ ЕЖЕДНЕВНЫЙ КОД<br />
                 <span className="text-secondary">НА ОХУЕННОСТЬ</span>
               </h2>
-              <p className="text-xl sm:text-2xl font-semibold">366 дней — твоя личная карта энергии.</p>
+              <p className="text-lg md:text-2xl font-semibold">366 дней — твоя личная карта энергии.</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
@@ -298,8 +298,8 @@ const Index = () => {
 
       <section id="about" className="min-h-screen flex items-center justify-center py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-5xl">
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-12 items-center animate-fade-in">
-            <div className="w-full md:space-y-6">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center animate-fade-in">
+            <div className="md:space-y-4">
               <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-heading">
                 Ольга Бауэр.
               </h2>
@@ -308,7 +308,7 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="w-full md:hidden">
+            <div className="md:hidden">
               <img 
                 src="https://cdn.poehali.dev/files/1e379f95-1836-4abc-92cf-fca4d4e51409.jpg" 
                 alt="Ольга Бауэр" 
@@ -316,7 +316,7 @@ const Index = () => {
               />
             </div>
 
-            <div className="w-full md:space-y-6">
+            <div className="md:space-y-3">
               <div className="space-y-2 text-sm md:text-lg">
                 <p>Переехала в Ялту с ребёнком и нулём.</p>
                 <p>Нашла работу за 7 дней.</p>
@@ -325,18 +325,18 @@ const Index = () => {
                   Не учу жить — показываю, как это возможно.
                 </p>
               </div>
-              <div className="pt-4 md:pt-8 space-y-3 md:space-y-4">
+              <div className="pt-4 md:pt-6 space-y-3 md:space-y-4">
                 <p className="text-sm md:text-lg font-semibold">Контакты:</p>
-                <div className="flex flex-col md:flex-row gap-2 md:gap-4">
-                  <Button variant="outline" size="sm" className="w-full md:w-auto" asChild>
-                    <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 justify-center">
-                      <Icon name="Bot" size={18} />
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                  <Button variant="outline" size="sm" className="w-full sm:w-auto" asChild>
+                    <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <Icon name="Bot" size={20} />
                       @bauer_kalendar_bot
                     </a>
                   </Button>
-                  <Button variant="outline" size="sm" className="w-full md:w-auto" asChild>
-                    <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 justify-center">
-                      <Icon name="Send" size={18} />
+                  <Button variant="outline" size="sm" className="w-full sm:w-auto" asChild>
+                    <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                      <Icon name="Send" size={20} />
                       @Olga_Bauer
                     </a>
                   </Button>
