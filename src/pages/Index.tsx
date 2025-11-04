@@ -86,14 +86,14 @@ const Index = () => {
                 <CarouselContent>
                   <CarouselItem>
                     <img 
-                      src="https://cdn.poehali.dev/files/2676d461-1711-48b0-8756-d79154955ce9.jpg" 
+                      src="https://cdn.poehali.dev/files/3363d99a-af07-46ef-8e76-77a5d23b8471.jpg" 
                       alt="Ольга Бауэр" 
                       className="rounded-lg shadow-2xl w-full object-cover max-h-[40vh]"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img 
-                      src="https://cdn.poehali.dev/files/6069882d-b745-41d9-a8e2-cf622bc26f32.jpg" 
+                      src="https://cdn.poehali.dev/files/d81e2573-66df-4ddf-9d73-427a99f71bae.jpg" 
                       alt="Ольга Бауэр" 
                       className="rounded-lg shadow-2xl w-full object-cover max-h-[40vh]"
                     />
@@ -135,14 +135,14 @@ const Index = () => {
                 <CarouselContent>
                   <CarouselItem>
                     <img 
-                      src="https://cdn.poehali.dev/files/2676d461-1711-48b0-8756-d79154955ce9.jpg" 
+                      src="https://cdn.poehali.dev/files/3363d99a-af07-46ef-8e76-77a5d23b8471.jpg" 
                       alt="Ольга Бауэр" 
                       className="rounded-lg shadow-2xl w-full object-cover"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img 
-                      src="https://cdn.poehali.dev/files/6069882d-b745-41d9-a8e2-cf622bc26f32.jpg" 
+                      src="https://cdn.poehali.dev/files/d81e2573-66df-4ddf-9d73-427a99f71bae.jpg" 
                       alt="Ольга Бауэр" 
                       className="rounded-lg shadow-2xl w-full object-cover"
                     />
@@ -314,7 +314,7 @@ const Index = () => {
                 </Card>
               </div>
               <Button size="lg" className="text-base sm:text-lg font-semibold mt-6 md:mt-8 w-full sm:w-auto" asChild>
-                <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/bauerhelps" target="_blank" rel="noopener noreferrer">
                   🚀 Присоединиться к эфиру
                 </a>
               </Button>
@@ -365,7 +365,7 @@ const Index = () => {
                 </div>
                 
                 <Button size="lg" className="w-full text-base md:text-lg font-semibold mt-4" asChild>
-                  <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer">
+                  <a href="https://t.me/bauerhelps" target="_blank" rel="noopener noreferrer">
                     📅 Купить календарь
                   </a>
                 </Button>
@@ -407,7 +407,7 @@ const Index = () => {
                 </div>
                 <div className="pt-6 text-center">
                   <Button size="lg" className="text-sm sm:text-base md:text-lg font-semibold w-full whitespace-normal h-auto py-3" asChild>
-                    <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer">
+                    <a href="https://t.me/bauerhelps" target="_blank" rel="noopener noreferrer">
                       💬 Записаться на диагностику
                     </a>
                   </Button>
@@ -451,15 +451,15 @@ const Index = () => {
                 <p className="text-sm md:text-lg font-semibold">Контакты:</p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Button variant="outline" className="w-full sm:w-auto" asChild>
-                    <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <a href="https://t.me/bauerhelps" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                       <Icon name="Bot" size={20} />
-                      @bauer_kalendar_bot
+                      @bauerhelps
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full sm:w-auto" asChild>
-                    <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <a href="https://t.me/bauerhelps" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                       <Icon name="Send" size={20} />
-                      @Olga_Bauer
+                      @bauerhelps
                     </a>
                   </Button>
                 </div>
