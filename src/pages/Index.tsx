@@ -62,40 +62,49 @@ const Index = () => {
       </section>
 
       <section id="efir" className="min-h-screen flex items-center justify-center py-20 px-4 bg-card/50">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center space-y-8 animate-fade-in">
-            <h2 className="text-4xl md:text-6xl font-bold font-heading">
-              ЖИВЫЕ ЭФИРЫ<br />
-              <span className="text-primary">КАЖДЫЙ ЧЕТВЕРГ В 20:00 (МСК)</span>
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Расшифровываем даты, коды и состояния.
-            </p>
-            <div className="grid gap-6 text-left max-w-2xl mx-auto pt-8">
-              <Card className="bg-background/80 border-primary/20">
-                <CardContent className="p-6 flex gap-4">
-                  <span className="text-2xl">🔹</span>
-                  <p className="text-lg">Разбираем твою дату рождения — и ты видишь, где теряешь энергию.</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-background/80 border-primary/20">
-                <CardContent className="p-6 flex gap-4">
-                  <span className="text-2xl">🔹</span>
-                  <p className="text-lg">Включаем состояние: ХОЧУ. МОГУ. МНЕ МОЖНО.</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-background/80 border-primary/20">
-                <CardContent className="p-6 flex gap-4">
-                  <span className="text-2xl">🔹</span>
-                  <p className="text-lg">15 минут практики — и мозг из тумана выходит.</p>
-                </CardContent>
-              </Card>
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in order-2 md:order-1">
+              <img 
+                src="https://cdn.poehali.dev/files/a5bd4a78-d4e5-4506-8b09-3b5e0582dbdb.jpg" 
+                alt="Ольга Бауэр" 
+                className="rounded-lg shadow-2xl w-full object-cover"
+              />
             </div>
-            <Button size="lg" className="text-lg font-semibold mt-8" asChild>
-              <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer">
-                🚀 Присоединиться к эфиру
-              </a>
-            </Button>
+            <div className="text-center md:text-left space-y-8 animate-fade-in order-1 md:order-2">
+              <h2 className="text-4xl md:text-5xl font-bold font-heading">
+                ЖИВЫЕ ЭФИРЫ<br />
+                <span className="text-primary">КАЖДЫЙ ЧЕТВЕРГ В 20:00 (МСК)</span>
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Расшифровываем даты, коды и состояния.
+              </p>
+              <div className="grid gap-6 text-left pt-8">
+                <Card className="bg-background/80 border-primary/20">
+                  <CardContent className="p-6 flex gap-4">
+                    <span className="text-2xl">🔹</span>
+                    <p className="text-lg">Разбираем твою дату рождения — и ты видишь, где теряешь энергию.</p>
+                  </CardContent>
+                </Card>
+                <Card className="bg-background/80 border-primary/20">
+                  <CardContent className="p-6 flex gap-4">
+                    <span className="text-2xl">🔹</span>
+                    <p className="text-lg">Включаем состояние: ХОЧУ. МОГУ. МНЕ МОЖНО.</p>
+                  </CardContent>
+                </Card>
+                <Card className="bg-background/80 border-primary/20">
+                  <CardContent className="p-6 flex gap-4">
+                    <span className="text-2xl">🔹</span>
+                    <p className="text-lg">15 минут практики — и мозг из тумана выходит.</p>
+                  </CardContent>
+                </Card>
+              </div>
+              <Button size="lg" className="text-lg font-semibold mt-8" asChild>
+                <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer">
+                  🚀 Присоединиться к эфиру
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
