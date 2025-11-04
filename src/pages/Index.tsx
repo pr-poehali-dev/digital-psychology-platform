@@ -1,6 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Index = () => {
   const scrollToSection = (id: string) => {
@@ -52,11 +59,26 @@ const Index = () => {
             </div>
           </div>
           <div className="animate-slide-up">
-            <img 
-              src="https://cdn.poehali.dev/files/2676d461-1711-48b0-8756-d79154955ce9.jpg" 
-              alt="Ольга Бауэр" 
-              className="rounded-lg shadow-2xl w-full object-cover"
-            />
+            <Carousel className="w-full" opts={{ loop: true }}>
+              <CarouselContent>
+                <CarouselItem>
+                  <img 
+                    src="https://cdn.poehali.dev/files/2676d461-1711-48b0-8756-d79154955ce9.jpg" 
+                    alt="Ольга Бауэр" 
+                    className="rounded-lg shadow-2xl w-full object-cover"
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <img 
+                    src="https://cdn.poehali.dev/files/6069882d-b745-41d9-a8e2-cf622bc26f32.jpg" 
+                    alt="Ольга Бауэр" 
+                    className="rounded-lg shadow-2xl w-full object-cover"
+                  />
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
+            </Carousel>
           </div>
         </div>
       </section>
