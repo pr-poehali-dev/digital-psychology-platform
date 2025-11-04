@@ -166,17 +166,13 @@ const Index = () => {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-center">
-              <div className="space-y-3 md:space-y-6">
-                <div className="space-y-2 md:space-y-4 text-sm md:text-lg">
-                  <p>
-                    Сейчас я живу у моря, дышу свободой и помогаю другим включать свой код силы.
-                  </p>
-                  <p>
-                    Помогаю увидеть твой внутренний код — ту силу, из которой рождается уверенность, ясность и деньги.
-                  </p>
-                </div>
+            <div className="space-y-4 md:space-y-6">
+              <div className="text-sm md:text-lg">
+                <p>
+                  Сейчас я живу у моря, дышу свободой и помогаю другим включать свой код силы.
+                </p>
               </div>
+
               <div className="animate-slide-up">
                 <Carousel 
                   className="w-full" 
@@ -202,6 +198,23 @@ const Index = () => {
                   <CarouselPrevious className="left-4" />
                   <CarouselNext className="right-4" />
                 </Carousel>
+              </div>
+
+              <div className="space-y-4">
+                <p className="text-base md:text-xl font-semibold text-center">
+                  Помогаю увидеть твой внутренний код — ту силу, из которой рождается уверенность, ясность и деньги.
+                </p>
+                <div className="flex justify-center">
+                  <a 
+                    href="https://t.me/bauerhelps" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-all hover:scale-105"
+                  >
+                    <Icon name="Send" size={20} />
+                    Написать в Telegram
+                  </a>
+                </div>
               </div>
             </div>
           </div>
