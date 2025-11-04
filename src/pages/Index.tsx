@@ -32,53 +32,85 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="hero" className="min-h-screen flex items-center justify-center pt-20 px-4 py-12">
-        <div className="container mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div className="space-y-6 md:space-y-8 animate-fade-in">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold font-heading leading-tight">
-              ТЫ УЖЕ<br />
-              <span className="text-primary">ОХУЕННА.</span>
-            </h1>
-            <p className="text-xl sm:text-2xl md:text-3xl font-heading font-semibold">
-              МОЯ ЗАДАЧА — ПОКАЗАТЬ,<br />КАК ЭТО ИСПОЛЬЗОВАТЬ.
-            </p>
-            <div className="space-y-4 text-lg">
-              <p className="font-semibold">Я — Ольга Бауэр.</p>
-              <p>За 2 месяца переехала в Ялту с ребёнком и нулём на карте.</p>
-              <p>Нашла охуенную работу за 7 дней.</p>
-              <p>Живу у моря. Кайфую.</p>
-              <p className="text-secondary text-xl">🌊 Если я смогла — ты тем более.</p>
+      <section id="hero" className="min-h-screen flex items-center justify-center pt-20 px-4 py-8">
+        <div className="container mx-auto">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-12 items-center">
+            <div className="w-full md:hidden space-y-4 animate-fade-in text-center">
+              <h1 className="text-4xl font-bold font-heading leading-tight">
+                ТЫ УЖЕ<br />
+                <span className="text-primary">ОХУЕННА.</span>
+              </h1>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4">
-              <Button size="lg" className="text-base sm:text-lg font-semibold w-full sm:w-auto" onClick={() => scrollToSection('efir')}>
-                🔥 Эфир каждый четверг в 20:00
-              </Button>
-              <Button size="lg" variant="outline" className="text-base sm:text-lg font-semibold w-full sm:w-auto" onClick={() => scrollToSection('calendar')}>
-                📅 Календарь-2026
-              </Button>
+            
+            <div className="w-full md:hidden animate-slide-up">
+              <Carousel className="w-full" opts={{ loop: true }}>
+                <CarouselContent>
+                  <CarouselItem>
+                    <img 
+                      src="https://cdn.poehali.dev/files/2676d461-1711-48b0-8756-d79154955ce9.jpg" 
+                      alt="Ольга Бауэр" 
+                      className="rounded-lg shadow-2xl w-full object-cover max-h-[40vh]"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img 
+                      src="https://cdn.poehali.dev/files/6069882d-b745-41d9-a8e2-cf622bc26f32.jpg" 
+                      alt="Ольга Бауэр" 
+                      className="rounded-lg shadow-2xl w-full object-cover max-h-[40vh]"
+                    />
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="left-2" />
+                <CarouselNext className="right-2" />
+              </Carousel>
             </div>
-          </div>
-          <div className="animate-slide-up">
-            <Carousel className="w-full" opts={{ loop: true }}>
-              <CarouselContent>
-                <CarouselItem>
-                  <img 
-                    src="https://cdn.poehali.dev/files/2676d461-1711-48b0-8756-d79154955ce9.jpg" 
-                    alt="Ольга Бауэр" 
-                    className="rounded-lg shadow-2xl w-full object-cover"
-                  />
-                </CarouselItem>
-                <CarouselItem>
-                  <img 
-                    src="https://cdn.poehali.dev/files/6069882d-b745-41d9-a8e2-cf622bc26f32.jpg" 
-                    alt="Ольга Бауэр" 
-                    className="rounded-lg shadow-2xl w-full object-cover"
-                  />
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious className="left-4" />
-              <CarouselNext className="right-4" />
-            </Carousel>
+
+            <div className="space-y-4 md:space-y-8 animate-fade-in w-full">
+              <h1 className="hidden md:block text-5xl md:text-7xl font-bold font-heading leading-tight">
+                ТЫ УЖЕ<br />
+                <span className="text-primary">ОХУЕННА.</span>
+              </h1>
+              <p className="text-lg md:text-3xl font-heading font-semibold">
+                МОЯ ЗАДАЧА — ПОКАЗАТЬ, КАК ЭТО ИСПОЛЬЗОВАТЬ.
+              </p>
+              <div className="space-y-2 text-sm md:text-lg">
+                <p className="font-semibold">Я — Ольга Бауэр.</p>
+                <p>За 2 месяца переехала в Ялту с ребёнком и нулём на карте.</p>
+                <p>Нашла охуенную работу за 7 дней.</p>
+                <p>Живу у моря. Кайфую.</p>
+                <p className="text-secondary text-base md:text-xl">🌊 Если я смогла — ты тем более.</p>
+              </div>
+              <div className="flex flex-col gap-2 md:flex-row md:gap-4">
+                <Button size="default" className="text-sm md:text-lg font-semibold w-full md:w-auto" onClick={() => scrollToSection('efir')}>
+                  🔥 Эфир каждый четверг в 20:00
+                </Button>
+                <Button size="default" variant="outline" className="text-sm md:text-lg font-semibold w-full md:w-auto" onClick={() => scrollToSection('calendar')}>
+                  📅 Календарь-2026
+                </Button>
+              </div>
+            </div>
+            <div className="hidden md:block animate-slide-up">
+              <Carousel className="w-full" opts={{ loop: true }}>
+                <CarouselContent>
+                  <CarouselItem>
+                    <img 
+                      src="https://cdn.poehali.dev/files/2676d461-1711-48b0-8756-d79154955ce9.jpg" 
+                      alt="Ольга Бауэр" 
+                      className="rounded-lg shadow-2xl w-full object-cover"
+                    />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img 
+                      src="https://cdn.poehali.dev/files/6069882d-b745-41d9-a8e2-cf622bc26f32.jpg" 
+                      alt="Ольга Бауэр" 
+                      className="rounded-lg shadow-2xl w-full object-cover"
+                    />
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="left-4" />
+                <CarouselNext className="right-4" />
+              </Carousel>
+            </div>
           </div>
         </div>
       </section>
@@ -162,19 +194,15 @@ const Index = () => {
                       </p>
                     </div>
                     <div className="space-y-4 pt-4">
-                      <div className="flex items-center justify-between p-4 bg-background rounded-lg border border-primary">
+                      <div className="flex items-center justify-between p-3 md:p-4 bg-background rounded-lg border border-primary">
                         <div>
-                          <p className="text-sm text-muted-foreground">Пресейл (до 15 декабря)</p>
-                          <p className="text-3xl font-bold text-primary">999 ₽</p>
+                          <p className="text-xs md:text-sm text-muted-foreground">Пресейл (до 15 декабря)</p>
+                          <div className="flex items-center gap-2">
+                            <p className="text-2xl md:text-3xl font-bold text-primary">999 ₽</p>
+                            <p className="text-lg md:text-xl text-muted-foreground line-through">1999 ₽</p>
+                          </div>
                         </div>
-                        <Icon name="Sparkles" className="text-primary" size={32} />
-                      </div>
-                      <div className="flex items-center justify-between p-4 bg-background rounded-lg border border-border">
-                        <div>
-                          <p className="text-sm text-muted-foreground">Полная цена</p>
-                          <p className="text-2xl font-semibold">1999 ₽</p>
-                        </div>
-                        <Icon name="Star" className="text-muted-foreground" size={28} />
+                        <Icon name="Sparkles" className="text-primary" size={28} />
                       </div>
                     </div>
                     <Button size="lg" className="w-full text-lg font-semibold mt-4" asChild>
@@ -193,8 +221,8 @@ const Index = () => {
       <section id="diag" className="min-h-screen flex items-center justify-center py-12 md:py-20 px-4 bg-card/50">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center space-y-6 md:space-y-8 animate-fade-in">
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold font-heading">
-              БЕСПЛАТНАЯ СЕССИЯ —<br />
+            <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold font-heading leading-tight">
+              БЕСПЛАТНАЯ СЕССИЯ<br />
               <span className="text-primary">ГДЕ ТЫ СЕБЯ ПРЕДАЁШЬ</span>
             </h2>
             <Card className="bg-background border-primary/30">
@@ -213,7 +241,7 @@ const Index = () => {
                   </p>
                 </div>
                 <div className="pt-6 text-center">
-                  <Button size="lg" className="text-base sm:text-lg font-semibold w-full sm:w-auto" asChild>
+                  <Button size="lg" className="text-sm sm:text-base md:text-lg font-semibold w-full whitespace-normal h-auto py-3" asChild>
                     <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer">
                       💬 Записаться на диагностику
                     </a>
