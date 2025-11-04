@@ -217,45 +217,50 @@ const Index = () => {
               <p className="text-lg md:text-2xl font-semibold">366 дней — твоя личная карта энергии.</p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
-              <div>
+            <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-8 items-start">
+              <div className="w-full md:hidden">
                 <img 
                   src="https://cdn.poehali.dev/files/547fedd2-d8bc-427e-86e9-66355ae0a1a9.jpg" 
                   alt="Ольга Бауэр" 
                   className="rounded-lg shadow-2xl w-full object-cover"
                 />
               </div>
-              <Card className="bg-card border-primary/30">
-                <CardContent className="p-6 md:p-8 lg:p-10">
-                  <div className="space-y-6">
-                    <div className="space-y-4">
-                      <p className="text-lg">
-                        Каждый день — подсказка: когда действовать, когда замедлиться, когда взлетать.
-                      </p>
-                      <p className="text-lg">
-                        Без эзотерики. Без "вселенских энергий". Только точная работа с твоим кодом.
-                      </p>
-                    </div>
-                    <div className="space-y-4 pt-4">
-                      <div className="flex items-center justify-between p-3 md:p-4 bg-background rounded-lg border border-primary">
-                        <div>
-                          <p className="text-xs md:text-sm text-muted-foreground">Пресейл (до 15 декабря)</p>
-                          <div className="flex items-center gap-2">
-                            <p className="text-2xl md:text-3xl font-bold text-primary">999 ₽</p>
-                            <p className="text-lg md:text-xl text-muted-foreground line-through">1999 ₽</p>
-                          </div>
-                        </div>
-                        <Icon name="Sparkles" className="text-primary" size={28} />
+              
+              <div className="w-full space-y-4">
+                <p className="text-sm md:text-lg">
+                  Каждый день — подсказка: когда действовать, когда замедлиться, когда взлетать.
+                </p>
+                <p className="text-sm md:text-lg">
+                  Без эзотерики. Без "вселенских энергий". Только точная работа с твоим кодом.
+                </p>
+                
+                <div className="pt-2">
+                  <div className="flex items-center justify-between p-3 md:p-4 bg-card rounded-lg border border-primary">
+                    <div>
+                      <p className="text-xs md:text-sm text-muted-foreground">Пресейл (до 15 декабря)</p>
+                      <div className="flex items-center gap-2">
+                        <p className="text-2xl md:text-3xl font-bold text-primary">999 ₽</p>
+                        <p className="text-lg md:text-xl text-muted-foreground line-through">1999 ₽</p>
                       </div>
                     </div>
-                    <Button size="lg" className="w-full text-lg font-semibold mt-4" asChild>
-                      <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer">
-                        📅 Купить календарь
-                      </a>
-                    </Button>
+                    <Icon name="Sparkles" className="text-primary" size={28} />
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+                
+                <Button size="lg" className="w-full text-base md:text-lg font-semibold mt-4" asChild>
+                  <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer">
+                    📅 Купить календарь
+                  </a>
+                </Button>
+              </div>
+
+              <div className="hidden md:block w-full">
+                <img 
+                  src="https://cdn.poehali.dev/files/547fedd2-d8bc-427e-86e9-66355ae0a1a9.jpg" 
+                  alt="Ольга Бауэр" 
+                  className="rounded-lg shadow-2xl w-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
