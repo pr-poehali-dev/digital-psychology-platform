@@ -426,6 +426,9 @@ const Index = () => {
                 <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold font-heading">
                   Ольга Бауэр.
                 </h2>
+                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-primary mt-3">
+                  Девушка, которая не ждала идеальных условий.
+                </p>
               </div>
               
               <div className="md:hidden">
