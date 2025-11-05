@@ -344,9 +344,9 @@ const Index = () => {
                 <p className="text-sm md:text-lg">
                   Каждый день — подсказка: когда действовать, когда замедлиться, когда взлетать.
                 </p>
-                <p className="text-sm md:text-lg">
-                  Без эзотерики. Без "вселенских энергий". Только точная работа с твоим кодом.
-                </p>
+                <p className="text-sm md:text-lg">3 дня в твоей энергии — бесплатно.
+Проверь, как работает твой личный код силы.
+</p>
                 
                 <div className="pt-2">
                   <div className="flex items-center justify-between p-3 md:p-4 bg-card rounded-lg border border-primary">
