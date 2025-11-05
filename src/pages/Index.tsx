@@ -456,7 +456,7 @@ const Index = () => {
                   <Button variant="outline" className="w-full sm:w-auto" asChild>
                     <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                       <Icon name="Send" size={20} />
-                      @Olga_Bauer
+                      Написать в Telegram
                     </a>
                   </Button>
                 </div>
