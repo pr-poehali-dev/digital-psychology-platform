@@ -403,10 +403,8 @@ const Index = () => {
                   </p>
                 </div>
                 <div className="pt-6 text-center">
-                  <Button size="lg" className="text-sm sm:text-base md:text-lg font-semibold w-full whitespace-normal h-auto py-3" asChild>
-                    <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer">
-                      Записаться на диагностику
-                    </a>
+                  <Button size="lg" className="text-sm sm:text-base md:text-lg font-semibold w-full whitespace-normal h-auto py-3" onClick={() => window.open('tg://resolve?domain=bauerhelps', '_blank')}>
+                    Записаться на диагностику
                   </Button>
                 </div>
               </CardContent>
@@ -453,11 +451,11 @@ const Index = () => {
                       @bauer_kalendar_bot
                     </a>
                   </Button>
-                  <Button variant="outline" className="w-full sm:w-auto" asChild>
-                    <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <Button variant="outline" className="w-full sm:w-auto" onClick={() => window.open('tg://resolve?domain=bauerhelps', '_blank')}>
+                    <span className="flex items-center gap-2">
                       <Icon name="Send" size={20} />
                       Написать в Telegram
-                    </a>
+                    </span>
                   </Button>
                 </div>
                 <p className="text-secondary text-sm md:text-lg">
