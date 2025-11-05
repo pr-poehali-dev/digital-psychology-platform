@@ -403,7 +403,7 @@ const Index = () => {
                   </p>
                 </div>
                 <div className="pt-6 text-center">
-                  <Button size="lg" className="text-sm sm:text-base md:text-lg font-semibold w-full whitespace-normal h-auto py-3" onClick={() => window.open('tg://resolve?domain=bauerhelps', '_blank')}>
+                  <Button size="lg" className="text-sm sm:text-base md:text-lg font-semibold w-full whitespace-normal h-auto py-3" onClick={() => window.open('tg://resolve?domain=Olga_Bauer', '_blank')}>
                     Записаться на диагностику
                   </Button>
                 </div>
@@ -451,7 +451,7 @@ const Index = () => {
                       @bauer_kalendar_bot
                     </a>
                   </Button>
-                  <Button variant="outline" className="w-full sm:w-auto" onClick={() => window.open('tg://resolve?domain=bauerhelps', '_blank')}>
+                  <Button variant="outline" className="w-full sm:w-auto" onClick={() => window.open('tg://resolve?domain=Olga_Bauer', '_blank')}>
                     <span className="flex items-center gap-2">
                       <Icon name="Send" size={20} />
                       Написать в Telegram
