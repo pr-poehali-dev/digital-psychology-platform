@@ -453,12 +453,6 @@ const Index = () => {
                       @bauer_kalendar_bot
                     </a>
                   </Button>
-                  <Button variant="outline" className="w-full sm:w-auto" asChild>
-                    <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                      <Icon name="Send" size={20} />
-                      Написать в Telegram
-                    </a>
-                  </Button>
                 </div>
                 <p className="text-secondary text-sm md:text-lg">
                   Эфиры: каждый четверг в 20:00
