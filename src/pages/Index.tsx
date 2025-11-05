@@ -119,10 +119,10 @@ const Index = () => {
               </div>
               <div className="flex flex-col gap-2 md:flex-row md:gap-4">
                 <Button size="default" className="text-sm md:text-lg font-semibold w-full md:w-auto" onClick={() => scrollToSection('efir')}>
-                  🔥 Эфир каждый четверг в 20:00
+                  Эфир каждый четверг в 20:00
                 </Button>
                 <Button size="default" variant="outline" className="text-sm md:text-lg font-semibold w-full md:w-auto" onClick={() => scrollToSection('calendar')}>
-                  📅 Календарь-2026
+                  Календарь-2026
                 </Button>
               </div>
             </div>
@@ -287,35 +287,32 @@ const Index = () => {
             </div>
             <div className="text-center md:text-left space-y-6 md:space-y-8 animate-fade-in order-1 md:order-2">
               <h2 className="text-4xl md:text-5xl font-bold font-heading">
-                ЖИВЫЕ ЭФИРЫ<br />
-                <span className="text-primary">КАЖДЫЙ ЧЕТВЕРГ В 20:00 (МСК)</span>
+                <span className="text-primary">ЖИВЫЕ ЭФИРЫ</span><br />
+                КАЖДЫЙ ЧЕТВЕРГ В 20:00 (МСК)
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground">
                 Расшифровываем даты, коды и состояния.
               </p>
               <div className="grid gap-4 md:gap-6 text-left pt-6 md:pt-8">
                 <Card className="bg-background/80 border-primary/20">
-                  <CardContent className="p-6 flex gap-4">
-                    <span className="text-2xl">🔹</span>
-                    <p className="text-base md:text-lg">Разбираем твою дату рождения — и ты видишь, где теряешь энергию.</p>
+                  <CardContent className="p-6">
+                    <p className="text-base md:text-lg">Разбираем твою дату рождения — и ты видишь свои сильные стороны.</p>
                   </CardContent>
                 </Card>
                 <Card className="bg-background/80 border-primary/20">
-                  <CardContent className="p-6 flex gap-4">
-                    <span className="text-2xl">🔹</span>
-                    <p className="text-base md:text-lg">Включаем состояние: ХОЧУ. МОГУ. МНЕ МОЖНО.</p>
+                  <CardContent className="p-6">
+                    <p className="text-base md:text-lg">Снимаем внутренние тормоза, чтобы захотелось ДЕЙСТВОВАТЬ.</p>
                   </CardContent>
                 </Card>
                 <Card className="bg-background/80 border-primary/20">
-                  <CardContent className="p-6 flex gap-4">
-                    <span className="text-2xl">🔹</span>
-                    <p className="text-base md:text-lg">15 минут практики — и мозг из тумана выходит.</p>
+                  <CardContent className="p-6">
+                    <p className="text-base md:text-lg">Переключаем мозг из тревоги в ясность — и энергия возвращается.</p>
                   </CardContent>
                 </Card>
               </div>
               <Button size="lg" className="text-base sm:text-lg font-semibold mt-6 md:mt-8 w-full sm:w-auto" asChild>
-                <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer">
-                  🚀 Присоединиться к эфиру
+                <a href="https://t.me/BauerVibe" target="_blank" rel="noopener noreferrer">
+                  Присоединиться к эфиру
                 </a>
               </Button>
             </div>
@@ -366,7 +363,7 @@ const Index = () => {
                 
                 <Button size="lg" className="w-full text-base md:text-lg font-semibold mt-4" asChild>
                   <a href="https://t.me/bauer_kalendar_bot" target="_blank" rel="noopener noreferrer">
-                    📅 Купить календарь
+                    Купить календарь
                   </a>
                 </Button>
               </div>
@@ -408,7 +405,7 @@ const Index = () => {
                 <div className="pt-6 text-center">
                   <Button size="lg" className="text-sm sm:text-base md:text-lg font-semibold w-full whitespace-normal h-auto py-3" asChild>
                     <a href="https://t.me/Olga_Bauer" target="_blank" rel="noopener noreferrer">
-                      💬 Записаться на диагностику
+                      Записаться на диагностику
                     </a>
                   </Button>
                 </div>
