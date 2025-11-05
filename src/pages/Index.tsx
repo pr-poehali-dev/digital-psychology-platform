@@ -88,14 +88,14 @@ const Index = () => {
                     <img 
                       src="https://cdn.poehali.dev/files/2676d461-1711-48b0-8756-d79154955ce9.jpg" 
                       alt="Ольга Бауэр" 
-                      className="rounded-lg shadow-2xl w-full object-cover max-h-[40vh]"
+                      className="rounded-lg shadow-2xl w-full object-contain max-h-[50vh]"
                     />
                   </CarouselItem>
                   <CarouselItem>
                     <img 
                       src="https://cdn.poehali.dev/files/6069882d-b745-41d9-a8e2-cf622bc26f32.jpg" 
                       alt="Ольга Бауэр" 
-                      className="rounded-lg shadow-2xl w-full object-cover max-h-[40vh]"
+                      className="rounded-lg shadow-2xl w-full object-contain max-h-[50vh]"
                     />
                   </CarouselItem>
                 </CarouselContent>
