@@ -9,7 +9,7 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 
 const Index = () => {
@@ -32,6 +32,26 @@ const Index = () => {
     return () => {
       document.head.removeChild(style);
     };
+  }, []);
+
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, observerOptions);
+
+    const elements = document.querySelectorAll('.scroll-animate');
+    elements.forEach(el => observer.observe(el));
+
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -157,7 +177,7 @@ const Index = () => {
       </section>
 
       <section id="mission" className="min-h-screen flex items-center justify-center py-8 md:py-20 px-4 bg-card/50">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-6xl scroll-animate">
           <div className="space-y-4 md:space-y-12 animate-fade-in">
             <div className="text-center space-y-2 md:space-y-6">
               <h2 className="text-xl sm:text-2xl md:text-5xl font-bold font-heading leading-tight">
@@ -252,7 +272,7 @@ const Index = () => {
       </section>
 
       <section id="efir" className="min-h-screen flex items-center justify-center py-12 md:py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-6xl scroll-animate">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="animate-fade-in order-2 md:order-1">
               <img 
@@ -270,17 +290,17 @@ const Index = () => {
                 Расшифровываем даты, коды и состояния.
               </p>
               <div className="grid gap-4 md:gap-6 text-left pt-6 md:pt-8">
-                <Card className="bg-background/80 border-primary/20">
+                <Card className="bg-background/80 border-primary/20 scroll-animate-fast">
                   <CardContent className="p-6">
                     <p className="text-base md:text-lg">Разбираем твою дату рождения — и ты видишь свои сильные стороны.</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-background/80 border-primary/20">
+                <Card className="bg-background/80 border-primary/20 scroll-animate-fast">
                   <CardContent className="p-6">
                     <p className="text-base md:text-lg">Снимаем внутренние тормоза, чтобы захотелось ДЕЙСТВОВАТЬ.</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-background/80 border-primary/20">
+                <Card className="bg-background/80 border-primary/20 scroll-animate-fast">
                   <CardContent className="p-6">
                     <p className="text-base md:text-lg">Переключаем мозг из тревоги в ясность — и энергия возвращается.</p>
                   </CardContent>
@@ -297,7 +317,7 @@ const Index = () => {
       </section>
 
       <section id="calendar" className="min-h-screen flex items-center justify-center py-12 md:py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-6xl scroll-animate">
           <div className="space-y-8 md:space-y-12 animate-fade-in">
             <div className="text-left md:text-center space-y-4 md:space-y-6">
               <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold font-heading">
@@ -363,7 +383,7 @@ const Index = () => {
               БЕСПЛАТНАЯ СЕССИЯ<br />
               <span className="text-primary">ГДЕ ТЫ СЕБЯ ПРЕДАЁШЬ</span>
             </h2>
-            <Card className="bg-background border-primary/30">
+            <Card className="bg-background border-primary/30 scroll-animate">
               <CardContent className="p-6 md:p-8 lg:p-12 space-y-6 text-left">
                 <p className="text-lg md:text-xl font-semibold text-center">
                   30 минут — и ты видишь, где сливаешь энергию и что мешает жить в своём коде.
@@ -392,7 +412,7 @@ const Index = () => {
       </section>
 
       <section id="about" className="min-h-screen flex items-center justify-center py-12 md:py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-6xl scroll-animate">
           <div className="grid md:grid-cols-[1fr,400px] gap-6 md:gap-16 items-start animate-fade-in">
             <div className="space-y-6">
               <div>
