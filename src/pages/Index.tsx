@@ -45,6 +45,7 @@ const Index = () => {
               <button onClick={() => scrollToSection('efir')} className="hover:text-primary transition-colors">Эфиры</button>
               <button onClick={() => scrollToSection('calendar')} className="hover:text-primary transition-colors">Календарь</button>
               <button onClick={() => scrollToSection('diag')} className="hover:text-primary transition-colors">Диагностика</button>
+              <button onClick={() => scrollToSection('reviews')} className="hover:text-primary transition-colors">Отзывы</button>
               <button onClick={() => scrollToSection('about')} className="hover:text-primary transition-colors">Обо мне</button>
             </div>
             <button 
@@ -61,6 +62,7 @@ const Index = () => {
               <button onClick={() => scrollToSection('efir')} className="text-left py-2 hover:text-primary transition-colors">Эфиры</button>
               <button onClick={() => scrollToSection('calendar')} className="text-left py-2 hover:text-primary transition-colors">Календарь</button>
               <button onClick={() => scrollToSection('diag')} className="text-left py-2 hover:text-primary transition-colors">Диагностика</button>
+              <button onClick={() => scrollToSection('reviews')} className="text-left py-2 hover:text-primary transition-colors">Отзывы</button>
               <button onClick={() => scrollToSection('about')} className="text-left py-2 hover:text-primary transition-colors">Обо мне</button>
             </div>
           )}
@@ -387,6 +389,114 @@ const Index = () => {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" className="min-h-screen flex items-center justify-center py-12 md:py-20 px-4 bg-card/50">
+        <div className="container mx-auto max-w-6xl scroll-animate">
+          <div className="space-y-8 md:space-y-12">
+            <div className="text-center space-y-4">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold font-heading">
+                <span className="text-primary">ОТЗЫВЫ</span> КЛИЕНТОВ
+              </h2>
+              <p className="text-lg md:text-xl text-muted-foreground">
+                Реальные истории тех, кто уже нашёл свой код силы
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+              <Card className="bg-background/90 backdrop-blur border-primary/20">
+                <CardContent className="p-6 md:p-8 space-y-4">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                      <span className="text-2xl">👩</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-lg">Елизавета</p>
+                    </div>
+                  </div>
+                  <p className="text-base leading-relaxed">
+                    Еще раз благодарю за мощную сессию, за открытие четкого понимания, как двигаться дальше, как не сливаться, и как действовать 🙏
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    Ты очень крутая 😍 Особенно еще подтверждение для меня, что я хочу учится на психолога у Лиллит 🙈 а то я тут уже искала другие академии, где подешевле или «лучше» 😬
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    Даже передать словами не могу, благодарю, что взяла в работу меня, именно в то время когда было нужно, пришла как раз в нужный момент ❤️
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-background/90 backdrop-blur border-primary/20">
+                <CardContent className="p-6 md:p-8 space-y-4">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                      <span className="text-2xl">👩</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-lg">Оля</p>
+                    </div>
+                  </div>
+                  <p className="text-base leading-relaxed">
+                    Олечка хочу отзыв оставить, забегалась совсем 😊🙏 а в голове держу. Хоть и знаем мы друг друга давно, на встрече с тобой по диагностики ты меня прям отрезвила, буд-то дала по щекам, и сказала давай, блядть, вперёд, чего ты ждёшь, выжидаешь.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    Короче дала мне нужных пиздюлей, подсветила где надо, чему я очень рада и благодарна тебе, что самое интересное, это всего за 30 минут. И отмечу как важно себя прорабатывать 😊, я сдвинулась с места и сделала то, что так долго откладывала, стало намного легче, и энергии появилось больше) ❤️🙏 люблю, благодарю, обращусь ещё обязательно.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    И знай, ты супер детка, ты супер коуч, мастер своего дела, ты на своём месте, ты огонь 🔥🔥🔥
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-background/90 backdrop-blur border-primary/20">
+                <CardContent className="p-6 md:p-8 space-y-4">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                      <span className="text-2xl">👩</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-lg">Elza</p>
+                    </div>
+                  </div>
+                  <p className="text-base leading-relaxed">
+                    Оль, хочу сказать, спасибо за разбор-сессию. В начале у меня не очень получалось включится в свою проблему и отвечать на вопросы, которые ты мне задавала, но в моменте, получилось найти коннект и все прошло спокойно, легко и результативно.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    Редко где (в какой-то области психологии) и редко с кем (имею ввиду проводника) получается с первого сеанса найти первопричину проблемы, а у нас получилось. Чему я очень рада.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    Оль, спасибо еще раз ❤️ Желаю успехов и роста во всех сферах жизни, которые важны для тебя 💕
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-background/90 backdrop-blur border-primary/20">
+                <CardContent className="p-6 md:p-8 space-y-4">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                      <span className="text-2xl">👩</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-lg">Клиент</p>
+                    </div>
+                  </div>
+                  <p className="text-base leading-relaxed">
+                    И еще очень круто, что вы сказала про действия, что нужно через материальное развиваться чтобы не остаться мечтателем. А я так люблю философствовать и думать, нужно искать этому выход!
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    И 2 недели назад меня посетила мысль-а что если начать писать, просто рандомно фиксировать свои мысли, вдруг из этого потом что-то выйдет 😳 и ты говоришь- можно писать..
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    Говоришь нужно осознать и уяснить, что есть что-то высшее, высшие силы.. так вот они, дают мне знаки через тебя и наше мимолетное знакомство ✨
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    Оля, спасибо тебе огромнейшее, это было мне так нужно сейчас 🙏😌
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
