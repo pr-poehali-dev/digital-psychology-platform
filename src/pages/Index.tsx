@@ -202,46 +202,22 @@ const Index = () => {
                   </Carousel>
                 </div>
 
-                <div className="space-y-4">
-                  <p className="text-base font-semibold text-center">
+                <div className="text-center">
+                  <p className="text-base font-semibold">
                     Помогаю увидеть твой внутренний код — ту силу, из которой рождается уверенность, ясность и деньги.
                   </p>
-                  <div className="flex justify-center">
-                    <a 
-                      href="https://t.me/bauerhelps" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-all hover:scale-105"
-                    >
-                      <Icon name="Send" size={20} />
-                      Написать в Telegram
-                    </a>
-                  </div>
                 </div>
               </div>
 
               {/* Десктоп версия - две колонки */}
               <div className="hidden md:grid md:grid-cols-2 gap-8 items-center">
-                <div className="space-y-6">
-                  <div className="space-y-4 text-lg">
-                    <p>
-                      Сейчас я живу у моря, дышу свободой и помогаю другим включать свой код силы.
-                    </p>
-                    <p className="text-base font-normal">
-                      Помогаю увидеть твой внутренний код — ту силу, из которой рождается уверенность, ясность и деньги.
-                    </p>
-                  </div>
-                  <div>
-                    <a 
-                      href="https://t.me/bauerhelps" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-all hover:scale-105"
-                    >
-                      <Icon name="Send" size={20} />
-                      Написать в Telegram
-                    </a>
-                  </div>
+                <div className="space-y-4 text-lg">
+                  <p>
+                    Сейчас я живу у моря, дышу свободой и помогаю другим включать свой код силы.
+                  </p>
+                  <p className="text-base font-normal">
+                    Помогаю увидеть твой внутренний код — ту силу, из которой рождается уверенность, ясность и деньги.
+                  </p>
                 </div>
                 <div className="animate-slide-up">
                   <Carousel 
