@@ -184,14 +184,14 @@ const Index = () => {
                     <CarouselContent>
                       <CarouselItem>
                         <img 
-                          src="https://cdn.poehali.dev/files/cd8c9969-9cf3-4563-9ab4-ddcc1b2901f4.jpg" 
+                          src="https://cdn.poehali.dev/files/d6f5ffaf-cfa9-4a36-a4e6-38a216efaf25.jpg" 
                           alt="Ольга Бауэр" 
                           className="rounded-lg shadow-2xl w-full object-cover h-[300px]"
                         />
                       </CarouselItem>
                       <CarouselItem>
                         <img 
-                          src="https://cdn.poehali.dev/files/896a89f8-3543-49f1-a740-f91fcbd4ea9d.jpg" 
+                          src="https://cdn.poehali.dev/files/7347ecae-19b6-4824-bc21-1fac708d255d.jpg" 
                           alt="Ольга Бауэр" 
                           className="rounded-lg shadow-2xl w-full object-cover h-[300px]"
                         />
@@ -228,14 +228,14 @@ const Index = () => {
                     <CarouselContent>
                       <CarouselItem>
                         <img 
-                          src="https://cdn.poehali.dev/files/cd8c9969-9cf3-4563-9ab4-ddcc1b2901f4.jpg" 
+                          src="https://cdn.poehali.dev/files/d6f5ffaf-cfa9-4a36-a4e6-38a216efaf25.jpg" 
                           alt="Ольга Бауэр" 
                           className="rounded-lg shadow-2xl w-full object-cover h-[500px] lg:h-[700px]"
                         />
                       </CarouselItem>
                       <CarouselItem>
                         <img 
-                          src="https://cdn.poehali.dev/files/896a89f8-3543-49f1-a740-f91fcbd4ea9d.jpg" 
+                          src="https://cdn.poehali.dev/files/7347ecae-19b6-4824-bc21-1fac708d255d.jpg" 
                           alt="Ольга Бауэр" 
                           className="rounded-lg shadow-2xl w-full object-cover h-[500px] lg:h-[700px]"
                         />
