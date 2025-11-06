@@ -290,17 +290,17 @@ const Index = () => {
                 Расшифровываем даты, коды и состояния.
               </p>
               <div className="grid gap-4 md:gap-6 text-left pt-6 md:pt-8">
-                <Card className="bg-background/80 border-primary/20 scroll-animate-fast">
+                <Card className="bg-card/50 backdrop-blur border-primary/30 scroll-animate-fast">
                   <CardContent className="p-6">
                     <p className="text-base md:text-lg">Разбираем твою дату рождения — и ты видишь свои сильные стороны.</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-background/80 border-primary/20 scroll-animate-fast">
+                <Card className="bg-card/50 backdrop-blur border-primary/30 scroll-animate-fast">
                   <CardContent className="p-6">
                     <p className="text-base md:text-lg">Снимаем внутренние тормоза, чтобы захотелось ДЕЙСТВОВАТЬ.</p>
                   </CardContent>
                 </Card>
-                <Card className="bg-background/80 border-primary/20 scroll-animate-fast">
+                <Card className="bg-card/50 backdrop-blur border-primary/30 scroll-animate-fast">
                   <CardContent className="p-6">
                     <p className="text-base md:text-lg">Переключаем мозг из тревоги в ясность — и энергия возвращается.</p>
                   </CardContent>
