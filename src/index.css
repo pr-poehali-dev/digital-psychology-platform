@@ -104,31 +104,3 @@
     font-family: "Montserrat", sans-serif;
   }
 }
-
-@layer utilities {
-  .scroll-animate {
-    opacity: 0;
-    transform: translateY(30px);
-    transition:
-      opacity 0.8s ease-out,
-      transform 0.8s ease-out;
-  }
-
-  .scroll-animate.animate-in {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .scroll-animate-fast {
-    opacity: 0;
-    transform: translateY(20px);
-    transition:
-      opacity 0.5s ease-out,
-      transform 0.5s ease-out;
-  }
-
-  .scroll-animate-fast.animate-in {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}

@@ -9,7 +9,7 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import Autoplay from "embla-carousel-autoplay";
 
 const Index = () => {
@@ -32,26 +32,6 @@ const Index = () => {
     return () => {
       document.head.removeChild(style);
     };
-  }, []);
-
-  useEffect(() => {
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -100px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-in');
-        }
-      });
-    }, observerOptions);
-
-    const elements = document.querySelectorAll('.scroll-animate');
-    elements.forEach(el => observer.observe(el));
-
-    return () => observer.disconnect();
   }, []);
 
   return (
