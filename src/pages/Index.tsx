@@ -337,10 +337,10 @@ const Index = () => {
               </div>
               
               <div className="w-full space-y-4">
-                <p className="text-sm md:text-lg">
+                <p className="text-sm md:text-lg text-left">
                   Каждый день — подсказка: когда действовать, когда замедлиться, когда взлетать.
                 </p>
-                <p className="text-sm md:text-lg">3 дня в твоей энергии — бесплатно.
+                <p className="md:text-lg text-lg font-bold px-0 mx-0 my-[33px]">3 дня в твоей энергии — бесплатно.
 Проверь, как работает твой личный код силы.
 </p>
                 
