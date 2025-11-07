@@ -170,7 +170,7 @@ const Index = () => {
 
             <div className="space-y-4 md:space-y-0">
               {/* Мобильная версия - вертикальная */}
-              <div className="md:hidden space-y-4">
+              <div className="md:hidden space-y-4 px-[17px]">
                 <div className="text-sm">
                   <p>
                     Сейчас я живу у моря, дышу свободой и помогаю другим включать свой код силы.
