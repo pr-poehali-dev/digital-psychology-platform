@@ -205,7 +205,7 @@ const Index = () => {
                 </div>
 
                 <div className="text-center">
-                  <p className="text-base font-semibold">
+                  <p className="text-base font-semibold text-left">
                     Помогаю увидеть твой внутренний код — ту силу, из которой рождается уверенность, ясность и деньги.
                   </p>
                 </div>
